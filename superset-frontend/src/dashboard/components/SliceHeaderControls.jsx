@@ -227,24 +227,24 @@ class SliceHeaderControls extends React.PureComponent {
           </Menu.Item>
         )}
 
-        {this.props.supersetCanExplore && (
-          <Menu.Item key={MENU_KEYS.EXPLORE_CHART}>
-            {t('View chart in Explore')}
-          </Menu.Item>
-        )}
+        {/*{this.props.supersetCanExplore && (*/}
+        {/*  <Menu.Item key={MENU_KEYS.EXPLORE_CHART}>*/}
+        {/*    {t('View chart in Explore')}*/}
+        {/*  </Menu.Item>*/}
+        {/*)}*/}
 
-        <ShareMenuItems
-          url={getDashboardUrl(
-            window.location.pathname,
-            getActiveFilters(),
-            componentId,
-          )}
-          copyMenuItemTitle={t('Copy chart URL')}
-          emailMenuItemTitle={t('Share chart by email')}
-          emailSubject={t('Superset chart')}
-          addSuccessToast={addSuccessToast}
-          addDangerToast={addDangerToast}
-        />
+        {/*<ShareMenuItems*/}
+        {/*  url={getDashboardUrl(*/}
+        {/*    window.location.pathname,*/}
+        {/*    getActiveFilters(),*/}
+        {/*    componentId,*/}
+        {/*  )}*/}
+        {/*  copyMenuItemTitle={t('Copy chart URL')}*/}
+        {/*  emailMenuItemTitle={t('Share chart by email')}*/}
+        {/*  emailSubject={t('Superset chart')}*/}
+        {/*  addSuccessToast={addSuccessToast}*/}
+        {/*  addDangerToast={addDangerToast}*/}
+        {/*/>*/}
 
         <Menu.Item key={MENU_KEYS.RESIZE_LABEL}>{resizeLabel}</Menu.Item>
 
@@ -252,9 +252,9 @@ class SliceHeaderControls extends React.PureComponent {
           {t('Download as image')}
         </Menu.Item>
 
-        {this.props.supersetCanCSV && (
-          <Menu.Item key={MENU_KEYS.EXPORT_CSV}>{t('Export CSV')}</Menu.Item>
-        )}
+        {/*{this.props.supersetCanCSV && (*/}
+        {/*  <Menu.Item key={MENU_KEYS.EXPORT_CSV}>{t('Export CSV')}</Menu.Item>*/}
+        {/*)}*/}
       </Menu>
     );
 
